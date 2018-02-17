@@ -1,18 +1,242 @@
----
-layout: default
----
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+        ga('create', 'UA-92762020-3', 'auto');
+        ga('send', 'pageview');
+      
+      </script>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Maldonado Consulting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href = "css/style.css">
+</head>
 
-      <div class="entry">
-        {{ post.excerpt }}
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">
+          <span class="glyphicon glyphicon-home logo-xs"></span>
+      </a> 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">CASE STUDIES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="mx/index.html">ESPAÑOL</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  
+  <img src="img/mal2.jpg" width="150" height="150" style="border-radius: 50%">
+  <h1>Work smarter. </h1> 
+  <h3>Powering the AI revolution</h3>
+</div>
+
+<!-- Container (About Section) -->
+<div id = "about" class="container-fluid">
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Why us?</h2><br>
+      <h4><strong>We are business translators</strong>  
+        We help your business choosing the right technology.
+      <br>
+      <br>  
+      <p>
+        We love solving business problem more. We understand your challenges
+        for adopting AI: 
+          <ul>
+            <li>Choosing infrastructure.</li>
+            <li>Find use cases.</li>
+            <li><b>Build prototypes.</b></li>
+          </ul>
+        <br>
+        <br>
+      </p>
+    </h4>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid bg-grey text-center">
+  <h2>HOW CAN WE HELP?</h2>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-road logo-small"></span>
+      <h4>IDENTIFY USE CASES</h4>
+      <p>Comprehensive analysis of your technology, use-cases and business challenges to create a roadmap for your organization, based on our analytics maturity model.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cog logo-small"></span>
+      <h4>PROTOTYPE DEVELOPMENT</h4>      <p>Once we identify the use cases, we leverage battle-tested technologies to get you to speed fast. Get value before investing a fortune. 
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h4>COMPETENCY BUILDING</h4>
+      <p>Training in data science, Python, R and other technologies for your organization. Development of a custom training plan.</p>
+    </div>
+    <div class = "col-sm-1">
+    </div>
+  </div>
+  <br><br>
+</div>
+
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="container-fluid text-center">
+  <h2>Case Studies</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <div class="col-sm-8">
+          <!--<img src="img/churn.png" alt="Churn Dashboard" style="width:70%;">-->
+        </div>
+        <div class="col-sm-4">
+          <h3>Churn Dashboard</h3>
+          <p>Dashboard prototype for a client, showing a high-level overview of churn in his company. </p>
+          <p>Built entirely with open source technologies (R ecosystem).</p>
+        </div>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+      <div class="item">
+          <div class="col-sm-8">
+            <img src="img/email_verif.png" alt="E-mail" style="width:70%;">
+          </div>
+          <div class="col-sm-4">
+            <h3>E-mail verification and enrichment tool</h3>
+            <p>Tool for programmatically verify and enrich the data for marketing campaigns: give us the email, we do the rest!</p>
+          </div>
+        </div>
+    
+        <div class="item" >
+            <div class="col-sm-8">
+              <!--<img src="img/age_gender.png" alt="Age/Gender Estimation" style="width:70%;">-->
+            </div>
+            <div class="col-sm-4">
+              <h3>Age and Gender Estimation</h3>
+              <p>Development of a dashboard and the underlying predictive models to estimate age and gender from behavioral patterns.</p>
+            </div>
+        </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Prague, Czech Republic</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +420 737 066 672</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>info@maldonado-consulting.eu</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+    <!-- Add Google Maps -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.405255776696!2d14.458168316063217!3d50.078698979425845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b93630a82ac0f%3A0xd7c89e5b6bcf3a5b!2zSmnEjcOtbnNrw6EgMjI2LzE3LCAxMzAgMDAgUHJhaGEgMy3FvWnFvmtvdg!5e0!3m2!1sen!2scz!4v1498568101037" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Maldonado Consulting, s.r.o.</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"5c2438bd7249a6980fc80d7ea","lid":"1bf962c5fb"}) })</script>
+</body>
+</html>
